@@ -40,7 +40,7 @@ Unhandled exception. System.InvalidOperationException: Sequence contains no elem
 If you debug your XUnit V3 app and enable catching exceptions on external code you will see that it actually errors as:
 
 ```
-   at Microsoft.Playwright.IBrowserCreateExpectations.Mock.DisposeAsync() in F:\github\dpvreony\whipstaff\src\Whipstaff.UnitTests\obj\Debug\net9.0-windows10.0.19041\Rocks\Rocks.RockGenerator\Microsoft.Playwright.IBrowser_Rock_Create.g.cs:line 217
+   at ******.DisposeAsync() in somefile.cs:line 217
    at Xunit.Sdk.DisposalTracker.<DisposeAsync>d__10.MoveNext() in /_/src/xunit.v3.common/Utility/DisposalTracker.cs:line 137
    at Xunit.Sdk.DisposalTracker.<DisposeAsync>d__10.MoveNext() in /_/src/xunit.v3.common/Utility/DisposalTracker.cs:line 148
    at Xunit.v3.InProcessFrontController.<FindAndRun>d__12.MoveNext() in /_/src/xunit.v3.core/Framework/InProcessFrontController.cs:line 191
