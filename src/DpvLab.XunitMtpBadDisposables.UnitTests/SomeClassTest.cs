@@ -9,7 +9,8 @@ namespace DpvLab.XunitMtpBadDisposables.UnitTests
         [ClassData(typeof(SomeClassTestData))]
         public void TestWithTheory(SomeRandomDisposable thingThatWillFailInRunner)
         {
-            // this one crashes the test runner due to the theory instance.
+            // this one crashes the test runner due to the classdata instance.
+            // which is written to throw an exception in dispose
             var instance = new SomeClass(42, thingThatWillFailInRunner);
             Assert.NotNull(instance);
         }
